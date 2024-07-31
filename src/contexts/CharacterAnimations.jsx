@@ -1,5 +1,5 @@
 import { useControls } from "leva";
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
 const CharacterAnimationsContext = createContext({});
 

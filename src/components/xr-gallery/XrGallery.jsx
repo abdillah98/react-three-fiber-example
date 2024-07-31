@@ -53,7 +53,7 @@ const XrOverlay = () => {
               )}
             </Fragment>
           );
-        })}
+      })}
       {isPresenting && (
         <Interactive onSelect={placeModel}>
           <mesh ref={reticleRef} rotation-x={-Math.PI / 2}>

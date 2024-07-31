@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import React, { forwardRef, useEffect } from "react";
 import { useCharacterAnimations } from "../../contexts/CharacterAnimations";
 
 const Interface = forwardRef((props, ref) => {

@@ -1,13 +1,13 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import HomePages from "./pages/HomePages";
-import XrTreeBeechContainer from "./components/xr-tree-beech/XrTreeBeechContainer";
+import ViewPages from "./pages/ViewPages";
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<HomePages />} />
-      <Route path="/xr-tree-beech/:id" element={<XrTreeBeechContainer />} />
+      <Route path="/view/:id" element={<ViewPages />} />
     </Routes>
   );
 }

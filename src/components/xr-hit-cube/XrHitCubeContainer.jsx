@@ -9,12 +9,12 @@ const XrHitCubeContainer = () => {
         sessionInit={{
           requiredFeatures: ["hit-test"],
           optionalFeatures: [
-            'local-floor', 
-            'bounded-floor', 
-            'hand-tracking', 
-            'layers', 
-            'dom-overlay'
-          ] 
+          'local-floor', 
+          'bounded-floor', 
+          'hand-tracking', 
+          'layers', 
+          'dom-overlay'
+     ] 
         }}
       />
       <Canvas>

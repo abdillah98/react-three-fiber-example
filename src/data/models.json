@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Police Tracktor",
+    "image": "/images/item-1.png",
+    "modelURL": "https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/tractor-police/model.gltf"
+  },
+  {
+    "id": 2,
+    "name": "New Tracktor",
+    "image": "/images/item-2.png",
+    "modelURL": "https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/tractor/model.gltf"
+  },
+  {
+    "id": 3,
+    "name": "Black Tracktor",
+    "image": "/images/item-3.png",
+    "modelURL": "https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/tractor-2/model.gltf"
+  },
+  {
+    "id": 4,
+    "name": "Van Car",
+    "image": "/images/item-4.png",
+    "modelURL": "https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/van/model.gltf"
+  }
+]

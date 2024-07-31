@@ -1,10 +1,11 @@
 import React, { useEffect, useRef } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
 import { useCharacterAnimations } from "../../contexts/CharacterAnimations";
+import { Mesh } from "three";
 
-export default function Druid(props) {
+export default function TreeBeech(props) {
   const group = useRef();
-  const { nodes, materials, animations } = useGLTF("/models/druid.gltf");
+  const { nodes, materials, animations } = useGLTF("/models/tree-beech.gltf");
   const { actions, names } = useAnimations(animations, group);
 
   const { setAnimations, animationIndex, Color } = useCharacterAnimations();
@@ -21,14 +22,14 @@ export default function Druid(props) {
     };
   }, [animationIndex]);
   console.log('nodes', nodes);
-  return (
+  return ( 
     <group ref={group} {...props} dispose={null}>
       <group scale={1.91}>
         <primitive object={nodes.root} />
-        <skinnedMesh
-          geometry={nodes.druid.geometry}
+        <Mesh
+          geometry={nodes.Scene.geometry}
           material={materials.color_main}
-          skeleton={nodes.druid.skeleton}
+          skeleton={nodes.Scene.skeleton}
           material-color={Color}
         />
       </group>
@@ -36,7 +37,7 @@ export default function Druid(props) {
   );
 }
 
-useGLTF.preload("/models/druid.gltf");
+useGLTF.preload("/models/tree-beech.gltf");
 
 // import { useLoader } from "@react-three/fiber";
 // import { Suspense } from "react";

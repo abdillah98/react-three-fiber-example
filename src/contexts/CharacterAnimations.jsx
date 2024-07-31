@@ -1,5 +1,5 @@
 import { useControls } from "leva";
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext, useState } from "react";
 
 const CharacterAnimationsContext = createContext({});
 
@@ -8,9 +8,10 @@ export const CharacterAnimationsProvider = (props) => {
     Color: "#ffffff",
     Model: {
       options: {
-        Druid: "druid",
+        "Druid": "druid",
         "Young Korrigan": "young-korrigan",
         "Korrigan Hat": "korrigan-hat",
+        "Tree Beech": "tree-beech",
       },
       onChange: (value) => {
         setCurrentModelName(value);

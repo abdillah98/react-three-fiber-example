@@ -6,6 +6,7 @@ import { useCharacterAnimations } from "../../contexts/CharacterAnimations";
 import Druid from "./Druid";
 import KorriganHat from "./KorriganHat";
 import YoungKorrigan from "./YoungKorrigan";
+import TreeBeech from "./TreeBeech";
 
 const XrOverlay = () => {
   const reticleRef = useRef();
@@ -51,6 +52,9 @@ const XrOverlay = () => {
               {currentModelName === "korrigan-hat" && (
                 <KorriganHat position={position} />
               )}
+              {currentModelName === "tree-beech" && (
+                <TreeBeech position={position} />
+              )}
             </Fragment>
           );
       })}
@@ -68,6 +72,7 @@ const XrOverlay = () => {
         <YoungKorrigan />
       )}
       {!isPresenting && currentModelName === "korrigan-hat" && <KorriganHat />}
+      {!isPresenting && currentModelName === "tree-beech" && <TreeBeech />}
     </>
   );
 };

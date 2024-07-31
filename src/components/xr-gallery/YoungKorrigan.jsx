@@ -22,7 +22,7 @@ export default function YoungKorrigan(props) {
       actions[names[animationIndex]]?.fadeOut(0.5);
     };
   }, [animationIndex]);
-  
+  console.log('nodes', nodes);
   return (
     <group ref={group} {...props} dispose={null}>
       <group rotation={[0, 0.03, 0]} scale={0.15}>
